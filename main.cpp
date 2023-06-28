@@ -1,5 +1,6 @@
 #include <iostream>
 #include <tgbot/tgbot.h>
+
 int main() {
     TgBot::Bot bot("5822976994:AAHPW5pkRyOoUpqYMM-iN-HUOFj4mCvPmS4");
 
@@ -18,7 +19,7 @@ int main() {
             bot.getApi().deleteWebhook();
             longPoll.start();
         }
-    } catch (const std::exception& e) {
+    } catch (const std::exception &e) {
         std::cerr << "Ошибка: " << e.what() << std::endl;
     }
 
