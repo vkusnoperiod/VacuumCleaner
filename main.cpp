@@ -9,7 +9,7 @@ int main() {
     });
 
     bot.getEvents().onAnyMessage([&bot](TgBot::Message::Ptr message) {
-        bot.getApi().sendMessage(message->chat->id, "Иди нахуй еблан");
+        bot.getApi().sendMessage(message->chat->id, "Как дела?");
     });
 
     try {
