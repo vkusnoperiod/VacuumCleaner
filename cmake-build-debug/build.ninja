@@ -53,7 +53,7 @@ build CMakeFiles/MyTgBot.dir/main.cpp.o: CXX_COMPILER__MyTgBot_Debug /Users/mikh
   DEFINES = -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DHAVE_CURL
   DEP_FILE = CMakeFiles/MyTgBot.dir/main.cpp.o.d
   FLAGS = -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -fcolor-diagnostics -std=gnu++14
-  INCLUDES = -I/usr/local/include -isystem /opt/homebrew/include
+  INCLUDES = -I/Users/mikhailvoronin/Desktop/MyTgBot/include -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/MyTgBot.dir
   OBJECT_FILE_DIR = CMakeFiles/MyTgBot.dir
 
@@ -65,9 +65,9 @@ build CMakeFiles/MyTgBot.dir/main.cpp.o: CXX_COMPILER__MyTgBot_Debug /Users/mikh
 #############################################
 # Link the executable MyTgBot
 
-build MyTgBot: CXX_EXECUTABLE_LINKER__MyTgBot_Debug CMakeFiles/MyTgBot.dir/main.cpp.o | /usr/local/lib/libTgBot.a /opt/homebrew/lib/libssl.dylib /opt/homebrew/lib/libcrypto.dylib /opt/homebrew/lib/libboost_system-mt.dylib /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/lib/libcurl.tbd
+build MyTgBot: CXX_EXECUTABLE_LINKER__MyTgBot_Debug CMakeFiles/MyTgBot.dir/main.cpp.o | /Users/mikhailvoronin/Desktop/MyTgBot/lib/libTgBot.a /opt/homebrew/lib/libssl.dylib /opt/homebrew/lib/libcrypto.dylib /opt/homebrew/lib/libboost_system-mt.dylib /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/lib/libcurl.tbd
   FLAGS = -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6
-  LINK_LIBRARIES = /usr/local/lib/libTgBot.a  /opt/homebrew/lib/libssl.dylib  /opt/homebrew/lib/libcrypto.dylib  /opt/homebrew/lib/libboost_system-mt.dylib  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/lib/libcurl.tbd
+  LINK_LIBRARIES = /Users/mikhailvoronin/Desktop/MyTgBot/lib/libTgBot.a  /opt/homebrew/lib/libssl.dylib  /opt/homebrew/lib/libcrypto.dylib  /opt/homebrew/lib/libboost_system-mt.dylib  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/lib/libcurl.tbd
   OBJECT_DIR = CMakeFiles/MyTgBot.dir
   POST_BUILD = :
   PRE_LINK = :
