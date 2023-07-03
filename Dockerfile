@@ -3,7 +3,7 @@ FROM ubuntu:latest
 
 # Обновляем список пакетов и устанавливаем необходимые зависимости
 RUN apt-get update && \
-    apt-get install -y cmake libboost-all-dev libssl-dev zlib1g-dev libcurl4-openssl-dev
+    apt-get install -y g++ cmake libboost-all-dev libssl-dev zlib1g-dev libcurl4-openssl-dev
 
 # Копируем исходный код проекта в контейнер
 COPY . /app
