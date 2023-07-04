@@ -10,12 +10,13 @@ find_package(Threads REQUIRED)
 find_package(OpenSSL REQUIRED)
 find_package(Boost COMPONENTS system REQUIRED)
 find_package(CURL)
-include_directories(include ${OPENSSL_INCLUDE_DIR} ${Boost_INCLUDE_DIR})
+include_directories(/usr/local/include ${OPENSSL_INCLUDE_DIR} ${Boost_INCLUDE_DIR})
 if (CURL_FOUND)
     include_directories(${CURL_INCLUDE_DIRS})
     add_definitions(-DHAVE_CURL)
-endif ()
+endif()
 
-add_executable(MyTgBot main.cpp)
+add_executable(MyTgBot src/main.cpp)
 
-target_link_libraries(MyTgBot ${CMAKE_SOURCE_DIR}/lib/libTgBot.a ${CMAKE_THREAD_LIBS_INIT} ${OPENSSL_LIBRARIES} ${Boost_LIBRARIES} ${CURL_LIBRARIES})
+target_link_libraries(MyTgBot /usr/local/lib/libTgBot.a
+        ${CMAKE_THREAD_LIBS_INIT} ${OPENSSL_LIBRARIES} ${Boost_LIBRARIES} ${CURL_LIBRARIES})
