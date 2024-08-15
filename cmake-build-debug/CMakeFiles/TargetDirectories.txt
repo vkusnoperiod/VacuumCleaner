@@ -1,3 +1,0 @@
-/Users/mikhailvoronin/Desktop/MyTgBot/cmake-build-debug/CMakeFiles/MyTgBot.dir
-/Users/mikhailvoronin/Desktop/MyTgBot/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/mikhailvoronin/Desktop/MyTgBot/cmake-build-debug/CMakeFiles/rebuild_cache.dir
