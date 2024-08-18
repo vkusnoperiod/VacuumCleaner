@@ -5,8 +5,8 @@
 class Keys{
 public:
     Keys(){
-        tg_key = "6095490209:AAGE_0tIPHzBf8x0DcAgLGZv2NErlIqmtvY";
-        openai_key = "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";
+        tg_key = "";
+        openai_key = "";
     }
 
     std::string getApiKey(){
